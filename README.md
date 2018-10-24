@@ -1,30 +1,13 @@
-# blogproject
+# admin-server
 
-> A Vue.js project
+   一个后台服务的项目，使用的技术 koa + koa-router + sequelize。
+   数据库使用的是mysql，项目启动时需要在 db/config/dev-config.js 文件中修改数据库的相关信息
+   前端项目地址： https://github.com/fate66/web-admin
 
 ## Build Setup
 
-``` bash
-# install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+npm run server
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
