@@ -8,6 +8,8 @@ import consts from './libs/consts'
 const Koa = require('koa')
 const koaBody = require('koa-body')
 const KoaHelmet = require('koa-helmet') // 安全性相关的中间件
+const koaStatic = require('koa-static')
+
 
 const app = new Koa()
 let ENV = process.argv.splice(2, 1)[0] || 'development'
@@ -27,6 +29,8 @@ app.context.op = require('sequelize').Op
 
 // 常见9种安全隐患防御
 app.use(KoaHelmet())
+app.use(serverConfig.indexFN)
+app.use(koaStatic(serverConfig.staticFN()))
 app.use(koaBody(serverConfig.koaBody))
 app.use(serverConfig.reqParamsFN)
 app.use(koaRouterApp.routes())
