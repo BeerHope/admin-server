@@ -1,2 +1,0 @@
-webpackJsonp([1],{Htt8:function(t,e){},P1Pu:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var s={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"login"},[e("el-row",{attrs:{gutter:20}},[e("el-col",{attrs:{span:8,offset:8}},[e("div",{staticClass:"title"},[this._v("CRM后台管理系统")])])],1)],1)},staticRenderFns:[]};var r=n("VU/8")({data:function(){return{}},created:function(){},methods:{}},s,!1,function(t){n("Htt8")},null,null);e.default=r.exports}});
-//# sourceMappingURL=1.f2be678bacf9299a5dc4.js.map

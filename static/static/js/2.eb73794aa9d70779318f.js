@@ -1,2 +1,0 @@
-webpackJsonp([2],{DYGS:function(e,t){},EWfp:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"app-box"},[t("router-view")],1)},staticRenderFns:[]};var r=n("VU/8")({name:"HelloWorld",data:function(){return{}},created:function(){}},a,!1,function(e){n("DYGS")},"data-v-9a9eaea8",null);t.default=r.exports}});
-//# sourceMappingURL=2.eb73794aa9d70779318f.js.map
