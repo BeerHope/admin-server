@@ -12,7 +12,8 @@ const koaStatic = require('koa-static')
 
 
 const app = new Koa()
-let ENV = process.argv.splice(2, 1)[0] || 'development'
+let ENV = process.argv.splice(2, 2)[1] || 'development'
+const port = ENV === 'development' ? 3000 : 80
 app.env = global.env = ENV
 app.context.env = app.env
 serverConfig.logFN(app)
@@ -42,5 +43,8 @@ app.on('error', (err, ctx) => {
   ctx.response.body = ctx.parsebody('', -2, err)
 })
 
-app.listen(3000)
-console.log('app started at port 3000...')
+app.listen(port)
+global.infoLog.info('当前的执行环境---', global.env)
+global.infoLog.info(`app started at port ${port}...`)
+
+console.log()

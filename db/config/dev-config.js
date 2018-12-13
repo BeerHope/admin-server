@@ -1,5 +1,5 @@
 export default {
-  blog: {
+  default: {
     database: 'blog', // 数据库
     username: 'root', // 用户名
     password: '12345678', // 口令

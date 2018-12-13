@@ -23,7 +23,7 @@ let createSeqExample = (config) => {
 }
 const db = (app) => {
   let config = checkConfig(app)
-  let blogSequelize = createSeqExample(config.blog)
+  let blogSequelize = createSeqExample(config.default)
   return {blogSequelize}
 }
 

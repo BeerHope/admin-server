@@ -36,7 +36,6 @@ const logFN = (app) => {
     // debugLogger.debug('我是调试日志')
     // errLogger.error('我是错误日志')
     // otherLogger.info('我是info')
-    infoLog.info('当前的执行环境---', global.env)
 }
 
 const koaBody = {
