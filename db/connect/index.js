@@ -14,11 +14,11 @@ let createSeqExample = (config) => {
             acquire: 30000,
             idle: 10000
         },
-        dialectOptions: {
-            charset: "utf8mb4",
-            collate: "utf8mb4_unicode_ci",
-            supportBigNumbers: true,
-            bigNumberStrings: true
+        define: {
+            charset: 'utf8',
+            dialectOptions: {
+                collate: 'utf8_general_ci'
+            }
         },
         logging: (res) => {
             global.infoLog.info('本次请求执行的sql----', res)
