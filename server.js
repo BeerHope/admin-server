@@ -38,9 +38,8 @@ app.use(koaRouterApp.routes())
 
 app.on('error', (err, ctx) => {
   // ErrLogger.error(`server error: ${err}. Context is ${JSON.stringify(ctx)}.`)
-  console.log('--------', err)
   ctx.errLog.error('err---', err)
-  ctx.response.body = ctx.parsebody('', -2, err)
+  ctx.response.body = ctx.parsebody('', consts.STATE_CODE.UNKNOWN_ERROR, err)
 })
 
 app.listen(port)

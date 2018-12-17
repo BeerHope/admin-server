@@ -64,7 +64,10 @@ const reqParamsFN = async (ctx, next) => {
     }
     if (postParams) {
         for (let pk in postParams) {
-            postParams[pk] = JSON.parse(postParams[pk])
+            try {
+                postParams[pk] = JSON.parse(postParams[pk])
+            } catch (e) {
+            }
         }
     }
     ctx.params = Object.keys(getParams).length ? getParams : postParams
