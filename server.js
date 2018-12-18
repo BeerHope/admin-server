@@ -9,6 +9,8 @@ const Koa = require('koa')
 const koaBody = require('koa-body')
 const KoaHelmet = require('koa-helmet') // 安全性相关的中间件
 const koaStatic = require('koa-static')
+const compress = require('koa-compress');
+
 
 
 const app = new Koa()
@@ -35,6 +37,7 @@ app.use(koaStatic(serverConfig.staticFN()))
 app.use(koaBody(serverConfig.koaBody))
 app.use(serverConfig.reqParamsFN)
 app.use(koaRouterApp.routes())
+app.use(compress({threshold: 2048}));
 
 app.on('error', (err, ctx) => {
   // ErrLogger.error(`server error: ${err}. Context is ${JSON.stringify(ctx)}.`)
