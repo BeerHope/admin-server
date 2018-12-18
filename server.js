@@ -33,11 +33,11 @@ app.context.op = require('sequelize').Op
 // 常见9种安全隐患防御
 app.use(KoaHelmet())
 app.use(serverConfig.indexFN)
+app.use(compress());
 app.use(koaStatic(serverConfig.staticFN()))
 app.use(koaBody(serverConfig.koaBody))
 app.use(serverConfig.reqParamsFN)
 app.use(koaRouterApp.routes())
-app.use(compress());
 
 app.on('error', (err, ctx) => {
   // ErrLogger.error(`server error: ${err}. Context is ${JSON.stringify(ctx)}.`)
