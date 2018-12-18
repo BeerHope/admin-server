@@ -37,7 +37,7 @@ app.use(koaStatic(serverConfig.staticFN()))
 app.use(koaBody(serverConfig.koaBody))
 app.use(serverConfig.reqParamsFN)
 app.use(koaRouterApp.routes())
-app.use(compress({threshold: 2048}));
+app.use(compress());
 
 app.on('error', (err, ctx) => {
   // ErrLogger.error(`server error: ${err}. Context is ${JSON.stringify(ctx)}.`)
