@@ -33,6 +33,7 @@ app.context.op = require('sequelize').Op
 // 常见9种安全隐患防御
 app.use(KoaHelmet())
 app.use(serverConfig.indexFN)
+app.use(serverConfig.setResponseFN)
 app.use(compress());
 app.use(koaStatic(serverConfig.staticFN()))
 app.use(koaBody(serverConfig.koaBody))
