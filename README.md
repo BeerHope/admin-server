@@ -8,6 +8,8 @@
    前端项目地址： https://github.com/fate66/web-admin
    前端自动化上线项目地址：https://github.com/fate66/admin-on-line
 
+   路由注册于model注册皆是自动化注册。具体可以看rouer/index与models下面的index文件
+
    注册成功并自动登录功能：
    注册账号时，使用了事物（Transaction），注册账号同时生成token，若有一个失败，事物会自动进行回滚。
    注册成功会同时生成token可以实现前端在注册成功后自动登录，不需要用户再次登录。
@@ -48,7 +50,9 @@
 
    页面优化：页面优化主要是在页面的解析过程中进行优化，HTML解析是从头到尾依次解析，当遇到外链的css与js文件时，便会先下载文件并且执行过后再
    进行解析。这部我们要做的优化就是将下载css与js文件的时间提前，并且不阻塞浏览器解析页面，Preload便可以实现这个功能。
+
    首页加载出来之后的优化可以是将"可能"用到的文件提前下载下来，Prefetch可以实现这个功能。（Preload与Prefetch的具体区别于用法可以自行谷歌）
+
    对于当前项目，webpack打包生成的的vendor、app、manifest这三个js文件是进入首页的时候必用的，所以可以给这三个文件加上Preload，webpack打包时可以借用
    preload-webpack-plugin这个插件实现。如果浏览器不支持这个Preload，会直接省略这个标签。不用担心兼容性问题
 
