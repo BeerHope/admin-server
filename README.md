@@ -58,6 +58,12 @@
 
    <link rel="preload" as="script" href="/static/js/vendor.7218c39891e531c4a7c5.js">
 
+   对vue-cli的优化：
+
+   1:引入图片压缩插件image-webpack-loader
+
+   2：关闭productionSourceMap，本项目关闭productionSourceMap后，js文件从3.9m降低到803k
+
 
    项目访问网址： http://101.201.70.134
 
