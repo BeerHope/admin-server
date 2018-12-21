@@ -89,7 +89,7 @@ const indexFN = async (ctx, next) => {
 
 const setResponseFN = async (ctx, next) => {
     let file = ctx.request.path.split('.').pop()
-    if (file === 'css' || file === 'js' || file === 'map') {
+    if (file === 'css' || file === 'js') {
         ctx.set('Cache-Control', 'max-age=315360000')
     }
     await next()
