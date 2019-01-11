@@ -28,7 +28,7 @@
    在路由跳转时，项目也会去检测是否登录，未登录则跳转到登录页
 
    项目上线：
-   node上线需要手动上线，前端项目上线时，我写了一个自动化上线系统，只需浏览器中访问 http://101.201.70.134:8081/v1/features/onLine
+   node上线需要手动上线，前端项目上线时，我写了一个自动化上线项目，只需浏览器中访问 http://101.201.70.134:8081/v1/features/onLine
    这个接口即可
 
    文件上传与下载：
@@ -76,5 +76,31 @@ npm run server
 
 线上环境
 npm run prod
+
+
+页面示例：
+
+1：登陆页面
+
+  ![image](https://github.com/fate66/project-h5/raw/master/repositories/login.png)
+
+2：首页
+
+  ![image](https://github.com/fate66/project-h5/raw/master/repositories/home.png)
+
+3：table表格页
+
+  ![image](https://github.com/fate66/project-h5/raw/master/repositories/list.png)
+
+4：上传文件页面
+
+  ![image](https://github.com/fate66/project-h5/raw/master/repositories/upload.png)
+
+5：自动化上线成功页面
+
+  ![image](https://github.com/fate66/project-h5/raw/master/repositories/online.png)
+
+
+
 
 
