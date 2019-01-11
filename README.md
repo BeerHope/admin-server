@@ -82,23 +82,23 @@ npm run prod
 
 1：登陆页面
 
-  ![image](https://github.com/fate66/project-h5/raw/master/repositories/login.png)
+  ![image](https://github.com/fate66/admin-server/raw/master/repositories/login.png)
 
 2：首页
 
-  ![image](https://github.com/fate66/project-h5/raw/master/repositories/home.png)
+  ![image](https://github.com/fate66/admin-server/raw/master/repositories/home.png)
 
 3：table表格页
 
-  ![image](https://github.com/fate66/project-h5/raw/master/repositories/list.png)
+  ![image](https://github.com/fate66/admin-server/raw/master/repositories/list.png)
 
 4：上传文件页面
 
-  ![image](https://github.com/fate66/project-h5/raw/master/repositories/upload.png)
+  ![image](https://github.com/fate66/admin-server/raw/master/repositories/upload.png)
 
 5：自动化上线成功页面
 
-  ![image](https://github.com/fate66/project-h5/raw/master/repositories/online.png)
+  ![image](https://github.com/fate66/admin-server/raw/master/repositories/online.png)
 
 
 
