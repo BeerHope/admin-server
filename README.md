@@ -1,5 +1,7 @@
 # admin-server
 
+后台管理系统，主要用来学习node以及前后台项目部署流程。
+
 项目介绍：
    一个后台管理系统，前后端分离，vue做前端，node写后台。
    这个项目是后台项目，使用的技术 koa + koa-router + sequelize。
